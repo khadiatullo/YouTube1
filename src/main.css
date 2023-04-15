@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.li-list{
+    @apply flex ml-2 mt-2 mb-2 pt-2 pb-2 pr-2 text-sm font-normal hover:bg-neutral-100 w-56 rounded-lg
+}
+
+.previy{
+    @apply w-96 sm1:rounded-2xl  mb-2 hover:rounded-none
+}
+
+.blogger-five{
+    @apply inline-block  mx-1 my-5 sm:p-1 active:bg-neutral-300
+}
+
+.name-ava{
+    @apply text-sm opacity-60
+}
