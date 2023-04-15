@@ -18,7 +18,7 @@ module.exports = {
       },
 
       fontFamily: {
-        main:["Roboto, Arial ,serif"]
+        main:["'Roboto', Arial, serif"]
       },
       width:{
         khadi:["31rem"]

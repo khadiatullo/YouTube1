@@ -771,7 +771,7 @@ video {
 }
 
 .font-main {
-  font-family: Roboto, Arial ,serif;
+  font-family: 'Roboto', Arial, serif;
 }
 
 .text-lg {
@@ -799,6 +799,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-black {
@@ -866,17 +870,12 @@ video {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   display: inline-block;
+  padding: 0.25rem;
 }
 
 .blogger-five:active {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 212 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 640px) {
-  .blogger-five {
-    padding: 0.25rem;
-  }
 }
 
 .name-ava {
@@ -915,10 +914,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mb-1 {
-    margin-bottom: 0.25rem;
-  }
-
   .md\:ml-7 {
     margin-left: 1.75rem;
   }
@@ -983,6 +978,10 @@ video {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1017,10 +1016,6 @@ video {
 
   .xl\:w-10\/12 {
     width: 83.333333%;
-  }
-
-  .xl\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .xl\:overflow-scroll {

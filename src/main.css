@@ -15,9 +15,9 @@
 }
 
 .blogger-five{
-    @apply inline-block  mx-1 my-5 sm:p-1 active:bg-neutral-300
+    @apply inline-block  mx-1 my-5 p-1 active:bg-neutral-300
 }
 
 .name-ava{
-    @apply text-sm opacity-60
+    @apply text-sm opacity-60 
 }
