@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
 
 .li-list{
     @apply flex ml-2 mt-2 mb-2 pt-2 pb-2 pr-2 text-sm font-normal hover:bg-neutral-100 w-56 rounded-lg
