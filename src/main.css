@@ -5,13 +5,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@700&display=swap');
+
 
 .li-list{
     @apply flex ml-2 mt-2 mb-2 pt-2 pb-2 pr-2 text-sm font-normal hover:bg-neutral-100 w-56 rounded-lg
 }
 
 .previy{
-    @apply w-96 sm1:rounded-2xl  mb-2 hover:rounded-none
+    @apply w-96 h-52 sm1:rounded-2xl  mb-2 hover:rounded-none
 }
 
 .blogger-five{

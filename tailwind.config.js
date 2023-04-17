@@ -4,6 +4,14 @@ module.exports = {
   theme: {
     extend:{
 
+      minWidth: {
+        'avatarka': '2.25rem',
+      },
+
+      borderRadius: {
+        'large': '50%',
+      },
+
       screens: {
         'tablet': '700px',
         // => @media (min-width: 700px) { ... }
@@ -20,11 +28,16 @@ module.exports = {
       fontFamily: {
         main:["'Roboto', Arial, serif"]
       },
+
       width:{
         khadi:["31rem"]
       },
 
-      
+      height:{
+        shortsss:["26rem"]
+      }
+
+
     },
   },
 
