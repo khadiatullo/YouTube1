@@ -17,7 +17,7 @@
 }
 
 .blogger-five{
-    @apply inline-block  my-5 p-1 active:bg-neutral-300
+    @apply inline-block mt-4 mb-8 p-1 active:bg-neutral-300
 }
 
 .name-ava{
