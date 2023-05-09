@@ -13,16 +13,35 @@ module.exports = {
       },
 
       screens: {
+
+        'xl-xl': '1424px',
+
         'tablet': '700px',
         // => @media (min-width: 700px) { ... }
 
         'lgplus': '1200px',
-        // => @media (min-width: 1100px) { ... }
+        // => @media (min-width: 1200px) { ... }
 
-        'sm1': '400px',
-        // => @media (min-width: 1100px) { ... }
+        'sm1': '700px',
+        // => @media (min-width: 700px) { ... }
 
-        
+        'smsmall': '400px',
+        // => @media (min-width: 400px) { ... }
+
+        'smsmalll': '500px',
+        // => @media (min-width: 400px) { ... }
+
+        'mobile': '364px',
+        // => @media (min-width: 364px) { ... }
+
+        'mob': '359px',
+        // => @media (min-width: 364px) { ... }
+
+        'mobpr': '340px',
+        // => @media (min-width: 364px) { ... }
+
+        'mobilesmart': '280px',
+        // => @media (min-width: 280px) { ... }
       },
 
       fontFamily: {
@@ -34,7 +53,7 @@ module.exports = {
       },
 
       height:{
-        shortsss:["26rem"]
+        shortsss:["25rem"]
       }
 
 

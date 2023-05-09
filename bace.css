@@ -1,0 +1,201 @@
+@media(min-width: 1431px){
+    .nav-panel{
+        transition: all .3s;
+    }
+    
+    .nav-panel.active{
+        left: -260px;
+        transition: all .3s;
+    }
+    
+    .bace.active{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1430px){
+    .nav-panel.active{
+        left: 0px;
+        transition: all .3s;
+    }
+    
+    .nav-panel{
+        left: -260px;
+        transition: all .3s;
+    }
+
+    .bace{
+        width: 100%;
+    }
+
+    .bace.active{
+        width: 100%;
+    }
+
+    .overlay.active{
+        position: fixed;
+        z-index: 40;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: .6;
+        transition: all .4;
+
+    }
+
+}
+
+
+
+@media(max-width: 768px){
+    .top-input.active{
+        display: block;
+        width: 28rem;
+    }
+    
+    .burger-menu-one.active{
+        display: none;
+    }
+
+    .burger-menu-too.active{
+        margin: auto;
+    }
+
+    .burger-menu-three.active{
+        display: none;
+    }
+    
+    .scretch.active{
+        background-color: rgb(243 244 246);
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+
+    .leftbutton.active{
+        display: block;
+    }
+
+    .Micro_Scretch.active{
+        display: flex;
+    }
+
+    .scretch-main.active{
+        background-color: rgb(243 244 246);
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+}
+
+@media(max-width: 600px){
+    .top-input.active{
+        display: block;
+        width: 20rem;
+    }
+}
+
+@media(max-width: 500px){
+    .top-input.active{
+        display: block;
+        width: 12rem;
+    }
+}
+
+@media(min-width: 1281px){
+    .list-main-too.active{
+        display: none;
+    }
+}
+
+.microphone__permission.active{
+    display: block;
+}
+
+.overlay-too.active{
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: .6;
+    transition: all .4;
+
+}
+
+#box-shadow-left{
+    box-shadow: 1px 2px 20px rgb(165, 163, 163);
+}
+
+#notifications{
+    box-shadow: 1px 2px 20px rgb(165, 163, 163);
+}
+
+#box-shadow-left.active{
+    display: block;
+}
+
+.microphone__permission{
+    box-shadow: 1px 2px 20px rgb(165, 163, 163);
+}
+
+
+.overlay-three.active{
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: .1;
+    transition: all .4;
+}
+
+#notifications{
+    transform: scale(0);
+}
+
+#notifications.active-popup{
+    transform: scale(1);
+}
+
+.overlay-four.active{
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: .1;
+    transition: all .4;
+}
+
+
+.main-accaunt{
+    box-shadow: 1px 2px 20px rgb(165, 163, 163);
+    transform: scale(0);
+}
+
+.main-accaunt.active-popup{
+    transform: scale(1);
+}
+
+.overlay-five.active{
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: .1;
+    transition: all .4;
+}
+
+/* .bace.active{
+    position: fixed;
+} */
+
+
+
