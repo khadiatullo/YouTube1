@@ -15,6 +15,7 @@
 
 <div>
 
+    <div class="overlay-menu"></div>
 
     <div class="overlay"></div>
 
@@ -33,19 +34,19 @@
                 <div><input class="top-input hidden md:block h-10 w-60 lg:w-khadi pl-4 rounded-tl-3xl rounded-bl-3xl border-solid border-2 border-neutral-200 focus:outline-1 outline-blue-700" type="text" placeholder="Введите запрос"></div>
                 <div class="Micro_Scretch md:flex hidden">
                     <div><button class="scretch-main w-10 h-10 md:bg-gray-100 md:border-solid md:border-[1px] md:border-neutral-200 md:rounded-tr-3xl md:rounded-br-3xl" title="Введите запрос"><img class="w-4 h-4 m-auto mobile:mt-0 mt-[3px]" src="imges/free-icon-loupe-622605.png" alt="поиск"></button></div>
-                    <button class="knopka-micrafon w-10 p-2 ml-1 hover:bg-gray-200 rounded-large" title="Голосовой поиск"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i></button>
+                    <button data-toggle="modalName" class="btn-micraphone knopka-micrafon w-10 p-2 ml-1 hover:bg-gray-200 rounded-large" title="Голосовой поиск"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i></button>
                 </div>
             </div>
         
             <div class="burger-menu-three flex items-center mr-1 md:mr-4" id="top-panel-three">
                 <div class="flex md:hidden ">
                     <div><button class="scretch w-10 h-10 p-2 hover:bg-gray-200 rounded-large" title="Введите запрос"><img class="w-4 h-4 m-auto" src="imges/free-icon-loupe-622605.png" alt="поиск"></button></div>
-                    <button class="knopka-micrafon-too w-10 p-2 hover:bg-gray-200 rounded-large" title="Голосовой поиск"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i></button>
+                    <button data-toggle="modalName" class="btn-micraphone knopka-micrafon-too w-10 p-2 hover:bg-gray-200 rounded-large" title="Голосовой поиск"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i></button>
                 </div>
-                <button class="hidden mobpr:block knopka-camera mr-[1px] w-10 p-2 hover:bg-gray-200 rounded-large" title="Создать"><i class="fa fa-video-camera " aria-hidden="true"></i></button>
-                <button class="hidden sm:block knopka-kolocolchik mr-[3px] w-10 p-2 hover:bg-gray-200 rounded-large" title="Уведомления"><i class="fa fa-bell-o " aria-hidden="true"></i></button>
-                <a target="_blank" class="sm:hidden block mr-[3px] w-10 p-2 pl-3 hover:bg-gray-200 rounded-large" href="notifications.html"><i class="fa fa-bell-o " aria-hidden="true"></i></a>
-                <button id="accaunt"><img class="w-8 h-8 flex-shrink-0 rounded-full" src="imges/79.jpg" alt=""></button>
+                <button data-toggle="modalNameOne" class="hidden mobpr:block knopka-camera mr-[1px] w-10 p-2 hover:bg-gray-200 rounded-large" title="Создать"><i class="fa fa-video-camera " aria-hidden="true"></i></button>
+                <button data-toggle="modalNameToo" class="sm:block hidden knopka-kolocolchik mr-[3px] w-10 p-2 hover:bg-gray-200 rounded-large" title="Уведомления"><i class="fa fa-bell-o " aria-hidden="true"></i></button>
+                <a class="sm:hidden block mr-[3px] w-10 p-2 pl-3 hover:bg-gray-200 rounded-large" target="_blank" href="notifications.html"><i class="fa fa-bell-o " aria-hidden="true"></i></a>
+                <button data-toggle="modalNameThree" id="accaunt"><img class="w-8 h-8 flex-shrink-0 rounded-full" src="imges/79.jpg" alt=""></button>
 
             </div>
         
@@ -484,11 +485,11 @@
 
 <!-- Голосовой поиск(скрытое) -->
 
-    <div class="microphone__permission hidden">
+    <div class="modal microphone__permission hidden" data-id="modalName">
 
     <div class="flex justify-center items-center ">
     
-        <div class="fixed top-2 bg-white w-[20rem] sm:w-[28rem] md:w-[37rem] h-[25rem] z-[60] active:border-black active:border-solid active:border-3">
+        <div class="microphone__permissionn fixed top-2 bg-white w-[20rem] sm:w-[28rem] md:w-[37rem] h-[25rem] z-[60] active:border-black active:border-solid active:border-3">
     
     
                 <div class="block">
@@ -511,7 +512,7 @@
     
                 <div class="flex justify-center items-center mt-36">
     
-                    <button class="knopka-micraf rounded-full p-3 bg-gray-300 active:bg-gray-400 transition-colors duration-200" title="Голосовой поиск">
+                    <button class="btn-micraphone knopka-micraf rounded-full p-3 bg-gray-300 active:bg-gray-400 transition-colors duration-200" title="Голосовой поиск">
     
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
@@ -527,12 +528,10 @@
 
     </div>
 
-    <div class="overlay-too"></div>
-
 
 <!--Правая, верхняя часть  -->
 
-    <div id="box-shadow-left" class="hidden fixed top-14  right-[7rem] z-50 bg-white w-[14rem] h-[5.8rem] rounded-lg">
+    <div id="box-shadow-left" class="modal fixed top-14  right-[7rem] z-50 bg-white w-[14rem] h-[5.8rem] hidden" data-id="modalNameOne">
 
         <div class="my-2">
 
@@ -550,12 +549,10 @@
 
     </div>
 
-    <div class="overlay-three"></div>
-
 
 <!-- Правая, верхняя, вторая часть  -->
 
-    <div id="notifications" class="hidden sm:block fixed top-14 right-[4rem] z-50 bg-white w-[30rem] h-[40rem] rounded-lg">
+    <div id="notifications" class="modal fixed top-14 right-[4rem] z-50 bg-white w-[30rem] max-h-screen overflow-auto rounded-lg hidden" data-id="modalNameToo">
 
         <div class="flex justify-between my-[6px] mx-4">
             <h1 class="p-2">Уведомления</h1>
@@ -616,13 +613,12 @@
 
     </div>
 
-    <div class="overlay-four"></div>
 
 
 <!-- Правая, верхняя, третья часть  -->
 
 
-    <div class="main-accaunt fixed top-3 right-[3.2rem] w-[20rem] max-h-screen rounded-lg z-50 bg-white overflow-auto">
+    <div class="modal main-accaunt fixed top-3 right-[3.2rem] w-[20rem] max-h-screen rounded-lg z-50 bg-white overflow-auto hidden" data-id="modalNameThree">
 
         <div class="flex justify-around mt-3">
             <img class="flex-shrink-0 w-10 h-10 rounded-full" src="imges/79.jpg" alt="">
@@ -788,15 +784,12 @@
 
     </div>
 
-    
-    <div class="overlay-five"></div>
-
-
 
 
 </div>
 
-<script src="script.js"></script>
+<script src="script.js">
+</script>
 
 
 </body>
