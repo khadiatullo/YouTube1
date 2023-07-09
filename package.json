@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwind build -i src/main.css -o public/styles.css --watch"
+    "build": "tailwind build -i src/main.css -o public/styles.css --watch",
+    "server": "json-server --watch db.json"
+
   },
   "author": "",
   "license": "ISC",
