@@ -85,12 +85,10 @@ btnMicrafons.forEach(btnMicrafon => {
 
 
 // ЗАПРОС
-// const { list } = require("postcss")
 
 async function getResponce(){
   let responce = await fetch("http://localhost:3000/content")
   let contents = await responce.json()
-  contents = contents.splice(0)
 
   let key;
 
