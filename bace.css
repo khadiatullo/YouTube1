@@ -147,6 +147,57 @@
     display: block;
 }
 
+/* Пагинация */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pagination-ul{
+    display: flex;
+    list-style: none;
+}
+
+.pagination-li{
+    margin-right: 2em;
+    margin-left: 2em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pagination-btn-active{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(178, 254, 0);
+    border-radius: 15%;
+    background-color: rgb(161, 161, 161);
+    transition: 300ms;
+}
+
+@media(max-width: 900px){
+    .pagination-li{
+        margin-right: .5em;
+        margin-left: .5em;
+    }
+}
+
+@media(max-width: 500px){
+    .pagination-li{
+        margin-right: .2em;
+        margin-left: .2em;
+    }
+}
+
+@media(max-width: 400px){
+    .pagination-li{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
 
 
 
