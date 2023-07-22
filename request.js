@@ -4,7 +4,7 @@ async function getResponce(){
     let responce = await fetch("http://localhost:3000/content")
     let contents = await responce.json()  
     return contents   
-}
+} 
 
 async function main(){
    
